@@ -1,0 +1,2 @@
+Best CV RMSE,model__max_depth,model__max_features,model__min_samples_leaf,model__n_estimators
+9.305583900796396,10,log2,5,200
