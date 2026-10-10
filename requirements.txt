@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+mlflow==3.16.1
+pandas
+numpy
+scikit-learn
+streamlit
+requests
