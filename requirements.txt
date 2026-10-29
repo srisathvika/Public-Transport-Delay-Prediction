@@ -3,6 +3,6 @@ uvicorn
 mlflow==3.16.1
 pandas
 numpy
-scikit-learn
 streamlit
 requests
+scikit-learn==1.4.0

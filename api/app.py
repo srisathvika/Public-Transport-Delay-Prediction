@@ -49,7 +49,11 @@ mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
 # If loading fails, fix the MLflow connection/configuration
 # rather than silently switching to another model.
 try:
-    model = mlflow.pyfunc.load_model(MODEL_URI)
+    MODEL_PATH = (
+        "/app/notebooks/mlruns/1/models/"
+        "m-921c1cf2419648ae84f5b68686f65401/artifacts"
+        )
+    model = mlflow.pyfunc.load_model(MODEL_PATH)
 except Exception as exc:
     raise RuntimeError(
         f"Could not load production model: {MODEL_URI}. "

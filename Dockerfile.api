@@ -1,0 +1,16 @@
+
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY api/ /app/api/
+COPY artifacts/ /app/artifacts/
+COPY notebooks/mlruns/ /app/notebooks/mlruns/
+
+EXPOSE 8000
+
+CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8000"]

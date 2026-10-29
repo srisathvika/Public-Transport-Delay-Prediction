@@ -1,11 +1,3 @@
-# MLflow local tracking
-mlflow.db
-mlruns/
-
-# Python
-__pycache__/
-*.pyc
-
 # Jupyter
 .ipynb_checkpoints/
 
@@ -14,6 +6,36 @@ __pycache__/
 venv/
 env/
 
-# OS
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# MLflow local database and tracking files
+mlflow.db
+mlruns/
+mlflow.db-shm
+mlflow.db-wal
+
+# Generated temporary files
+*.log
 .DS_Store
 Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
