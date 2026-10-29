@@ -145,7 +145,7 @@ The classification task revealed an additional target-definition limitation: the
 
 The application separates model development, experiment tracking, prediction serving, and the user interface into distinct components.
 
-![Public Transport Delay Prediction System Architecture](docs/system_architecture.png)
+![](docs/system_architecture.png)
 
 
 ### How the components work together
